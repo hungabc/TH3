@@ -1,4 +1,7 @@
 <p-panel header="Tìm kiếm" [style]="{'margin-top': '10px','text-align': 'left'}">
+    <div class="form-group" style="text-align: right; margin-top: 10px;">
+        <button (click)="TimKiem()" type="button" class="btn btn-danger"><i class="fa fa-search"></i> Tìm kiếm</button>
+      </div>
     <div class="form-group">
         <label for="usr">Mã sản phẩm:</label>
         <input [disabled]="ten_san_pham != null && ten_san_pham != ''" [(ngModel)]="ma_san_pham" type="text" class="form-control">
@@ -6,9 +9,6 @@
       <div class="form-group">
         <label for="usr">Tên sản phẩm</label>
         <input [disabled]="ma_san_pham != null && ma_san_pham != ''" [(ngModel)]="ten_san_pham" type="text" class="form-control">
-      </div>
-      <div class="form-group" style="text-align: right; margin-top: 10px;">
-        <button (click)="TimKiem()" type="button" class="btn btn-danger"><i class="fa fa-search"></i> Tìm kiếm</button>
       </div>
 </p-panel>
 <br>
